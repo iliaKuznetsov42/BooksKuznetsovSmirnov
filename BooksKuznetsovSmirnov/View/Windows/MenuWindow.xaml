@@ -1,0 +1,36 @@
+﻿<Window x:Class="BooksKuznetsovSmirnov.View.Windows.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BooksKuznetsovSmirnov.View.Windows"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="10" />
+            </Grid.RowDefinitions>
+
+            <Button Name="LbBTN" Grid.Row="1" Content="ListBox" Click="LbBTN_Click"/>
+            <Button Name="LvBtn" Grid.Row="3" Content="ListView" Click="LvBtn_Click"/>
+            <Button Name="DgBtn" Grid.Row="5" Content="DataGrid" Click="DgBtn_Click"/>
+        </Grid>
+
+
+        <Frame Grid.Column="2" Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
