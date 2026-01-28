@@ -8,7 +8,46 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ListBoxPage">
 
-    <Grid>
-        
-    </Grid>
+    <ListBox Name="BookLb">
+        <ListBox.ItemTemplate>
+         <DataTemplate>
+          <Border>
+           <Grid>
+           <Grid.RowDefinitions>
+               <RowDefinition Height="50"/>
+               <RowDefinition Height="10"/>
+               <RowDefinition Height="1*"/>
+           </Grid.RowDefinitions>
+           <Grid.ColumnDefinitions>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+               <ColumnDefinition Width="10"/>
+               <ColumnDefinition Width="auto"/>
+           </Grid.ColumnDefinitions>
+           <TextBlock Text="{Binding Rank}" Grid.Row="2"/>
+           <TextBlock Text="{Binding Title}" Grid.Column="2" Grid.Row="2"/>
+           <TextBlock Text="{Binding Author}" Grid.Column="4" Grid.Row="2"/>
+           <TextBlock Text="{Binding Published}" Grid.Column="6" Grid.Row="2"/>
+           <TextBlock Text="{Binding Country.Name}" Grid.Column="8" Grid.Row="2"/>
+           <TextBlock Text="{Binding OriginalLanguage.Name}" Grid.Column="10" Grid.Row="2"/>
+           <TextBlock Text="{Binding PageRage}" Grid.Column="12" Grid.Row="2"/>
+           <TextBlock Text="{Binding WordCount}" Grid.Column="14" Grid.Row="2"/>
+       </Grid>
+      </Border>
+     </DataTemplate>
+    </ListBox.ItemTemplate>
+   </ListBox>
 </Page>

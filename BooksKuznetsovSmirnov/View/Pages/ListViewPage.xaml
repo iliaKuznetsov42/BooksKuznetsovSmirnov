@@ -9,6 +9,21 @@
       Title="ListViewPage">
 
     <Grid>
+        <ListView Name="BookLv">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="№" DisplayMemberBinding="{Binding Rank}"/>
+                    <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn Header="Автор" DisplayMemberBinding="{Binding Author}"/>
+                    <GridViewColumn Header="Год публикации" DisplayMemberBinding ="{Binding Published}"/>
+                    <GridViewColumn Header="Страна" DisplayMemberBinding="{Binding Country.Name}"/>
+                    <GridViewColumn Header="Оригинальный язык" DisplayMemberBinding="{Binding OriginalLanguage.Name }"/>
+                    <GridViewColumn Header="Колличество страниц" DisplayMemberBinding="{Binding PageRange }"/>
+                    <GridViewColumn Header="Колличество слов" DisplayMemberBinding="{Binding WordCount }"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        
         
     </Grid>
 </Page>

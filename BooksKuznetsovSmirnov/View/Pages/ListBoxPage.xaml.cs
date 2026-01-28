@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BooksKuznetsovSmirnov.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace BooksKuznetsovSmirnov.View.Pages
         public ListBoxPage()
         {
             InitializeComponent();
+            BookLb.ItemsSource = App.context.Books.ToList();
         }
     }
 }

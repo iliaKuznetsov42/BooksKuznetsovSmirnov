@@ -23,6 +23,8 @@ namespace BooksKuznetsovSmirnov.View.Pages
         public ListViewPage()
         {
             InitializeComponent();
+            BookLv.ItemsSource=App.context.Books.ToList();
+
         }
     }
 }

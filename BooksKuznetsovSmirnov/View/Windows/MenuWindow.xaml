@@ -25,7 +25,7 @@
                 <RowDefinition Height="10" />
             </Grid.RowDefinitions>
 
-            <Button Name="LbBTN" Grid.Row="1" Content="ListBox" Click="LbBTN_Click"/>
+            <Button Name="LbBTN" Grid.Row="1" Content="ListBox" Click="LbBTN_Click" />
             <Button Name="LvBtn" Grid.Row="3" Content="ListView" Click="LvBtn_Click"/>
             <Button Name="DgBtn" Grid.Row="5" Content="DataGrid" Click="DgBtn_Click"/>
         </Grid>
